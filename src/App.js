@@ -35,6 +35,14 @@ function App() {
       >
         Load Image
       </Button>
+      <Button
+        variant="contained"
+        color="default"
+        style={{ margin: 8 }}
+        onClick={handleSubmit}
+      >
+        Generate Image
+      </Button>
     </div>
  );
 }
