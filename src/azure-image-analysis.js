@@ -12,7 +12,7 @@ const analyzeImage = async (imageUrl) => {
           visualFeatures: 'Categories,Description,Color',
         },
         headers: {
-          'Ocp-Apim-Subscription-Key': '96e25644eb474739abc64da7016c16b1',
+          'Ocp-Apim-Subscription-Key': 'XXXX-XXXX-XXXX-XXXX',
           'Content-Type': 'application/json',
         },
       }

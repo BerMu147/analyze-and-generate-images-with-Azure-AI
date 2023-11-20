@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
 import ImageIcon from '@material-ui/icons/Image';
 import analyzeImage from './azure-image-analysis'
-import axios from 'axios';
 
 function App() {
  const [imageUrl, setImageUrl] = useState('');
@@ -26,19 +25,19 @@ function App() {
  * @param {object} result - The result object containing the parsed results and OCRExitCode.
  * @returns {JSX.Element|null} - The JSX element to display the result or null if the result is falsy.
  */
-const DisplayResults = () => {
-  if (!result) return null;
+// const DisplayResults = () => {
+//   if (!result) return null;
 
-  const {
-    ParsedResults: [parsedResult],
-    OCRExitCode,
-  } = result;
-// If the OCRExitCode is not equal to 1, display an error message
-  if (OCRExitCode !== 1) {
-    return <h3>OCR Failed. Please try again.</h3>;
-  }
-  const { TextOverlay: { Paragraphs } } = parsedResult;
-}
+//   const {
+//     ParsedResults: [parsedResult],
+//     OCRExitCode,
+//   } = result;
+// // If the OCRExitCode is not equal to 1, display an error message
+//   if (OCRExitCode !== 1) {
+//     return <h3>OCR Failed. Please try again.</h3>;
+//   }
+//   const { TextOverlay: { Paragraphs } } = parsedResult;
+// }
 
 // Returns the UI elements
  return (
